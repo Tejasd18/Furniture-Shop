@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furniture Shop Payroll</title>
+    <link rel="stylesheet" href="payrol.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Furniture Shop Payroll System</h1>
+      </header>
+
+      <section class="form-section">
+        <h2>Employee Payroll Details</h2>
+        <form id="payrollForm">
+          <label for="employeeName">Employee Name:</label>
+          <input type="text" id="employeeName" required />
+          
+          <label for="baseSalary">Base Salary ($):</label>
+          <input type="number" id="baseSalary" required />
+
+          <label for="hoursWorked">Hours Worked (per week):</label>
+          <input type="number" id="hoursWorked" required />
+
+          <label for="overtimeRate">Overtime Rate ($/hour):</label>
+          <input type="number" id="overtimeRate" required />
+
+          <button type="submit">Calculate Payroll</button>
+        </form>
+      </section>
+
+      <section class="payroll-summary">
+        <h2>Payroll Summary</h2>
+        <p id="employeeSummary"></p>
+        <p id="grossSalary"></p>
+        <p id="taxDeduction"></p>
+        <p id="netSalary"></p>
+      </section>
+    </div>
+
+    <script src="payrol.js"></script>
+  </body>
+</html>
